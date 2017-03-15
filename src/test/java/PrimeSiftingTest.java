@@ -39,6 +39,12 @@ public class PrimeSiftingTest {
     assertEquals(expectedArray, newPrimeTest.getPrimeList(21));
   }
 
+  @Test
+  public void getPrimeList_returnEmptyArrayListIfInputIs1_true(){
+    PrimeSifting newPrimeTest = new PrimeSifting();
+    List<Integer> emptyTestArrayList = new ArrayList<Integer>();
+    assertEquals(emptyTestArrayList, newPrimeTest.getPrimeList(1));
+  }
 
 
 }
